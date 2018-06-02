@@ -7,7 +7,15 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
+
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+		
+		
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
@@ -57,6 +65,40 @@
 		<!-- Banner -->
 			<section id="banner">
 				
+				<script type="text/javascript">
+					$(document).ready(function() {
+					  
+					  $.magnificPopup.open({
+					  
+						  items: {
+						    src: 'images/promo.jpg'
+						  },
+						  type: 'image',
+						  removalDelay: 300,
+						  image: {
+						    // options for image content type
+						    titleSrc: 'Test Title',
+						    markup: '<div class="mfp-figure">'+
+				            '<div class="mfp-img"></div>'+
+				            '<div class="mfp-bottom-bar">'+
+				              '<div class="mfp-title"></div>'+
+				              '<div class="mfp-counter"></div>'+
+				            '</div>'+
+				          '</div>'
+						  }
+						});
+						
+					});
+				</script>
+				
+				<style>
+
+					.mfp-figure{
+						padding: 50px;
+					}				
+								
+				</style>
+
 			</section>
 
 		<!-- One -->
@@ -280,9 +322,10 @@
 				</p>
 				<br><br>
 				
-				<iframe width="660" height="415" src="https://www.youtube.com/embed/TCWzY0bWL-0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				<br>
-				<a href="https://discord.gg/spJnmNE" >PUSHI Shared Masternodes</a>
+				<iframe width="660" height="415" style="margin: 2em;" src="https://www.youtube.com/embed/TCWzY0bWL-0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe src="https://discordapp.com/widget?id=409891248191832065&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+				<br><br>
+				<a href="https://discord.gg/spJnmNE" >PUSHI Shared Masternodes At Discord</a>
 			</section>
 			
 			
